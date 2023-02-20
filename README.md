@@ -43,3 +43,11 @@ La funcion solo necesita de tres variables:
 * El puntaje que estima que el usuario dara a la pelicula en caso de verla.
 
 Como resultado al ingresar estas variable el sistema le dira si la pelicula es recomendada o no y de serlo estimara la puntuacion que le dara.
+
+🟣 **Recursos Utilizados:** 🟣
+
+[Streamlit](https://streamlit.io/) - Para desplegar el sistema de recomendaciones.<br>
+[Deta](https://deta.space/) - Para desplegar API.<br>
+[SDV Surprise](https://surpriselib.com/) - Libreria utilizada para implementar el modelo de ML.<br>
+[Pandas](https://pandas.pydata.org/) - Libreria para la manipulacion de los dataset.
+
