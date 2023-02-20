@@ -1,59 +1,45 @@
-Proyecto Individual - Data Engineer
-Licenciado: Gustavo Rafael Gonzalez
+# Proyecto Individual - MOL OPS
+**_Licenciado: Gustavo Rafael Gonzalez_**
 
-En este README encontrarán toda la documentación, e instrucciones necesarias, para poder utilizar la API que se me solicitó desarrollar.
+<p align="justify"> Recientemente se me ha solicitado de una semana a otra realizar un proceso de transformacion de datos y desarrollar una API, adicional a eso, me han encargado elaborar un modelo de ML de recomendacion de peliculas, basandose en el usuario y la pelicula. En este README encontrarán toda la documentación, e instrucciones necesarias, para poder utilizar la API que se me solicitó desarrollar y su enlace de acceso en **DETA**, asi mismo brindare los enlaces correspondientes al sistema de recomendaciones desplegado en **STREAMLIT** y la notebook que corresponde al desarrollo del modelo. </p>
 
 Video explicativo
 
-🟣 MENU: 🟣
+🟣**MENU:** 🟣
 
-Raw - las bases de datos que recibí para trabajar.
-ML_proyecto.ipynb - notebook del proyecto de Machine Learning
-transformacion.ipynb - notebook que contiene el trabajo de ETL de los datos
-querys.ipynb - notebook que contienen el proceso de desarrollo de las queries.
-rating_data.parquet - dataset que contiene registros de rating de peliculas por usuario.
-movie_data.csv - dataset con tiene peliculas por plataforma como netfli, disney, entre otros.
+🔹 **Raw** - las bases de datos que recibí para trabajar.<br>
+🔹 **ML_proyecto.ipynb** - notebook del proyecto de Machine Learning.<br>
+🔹 **transformacion.ipynb** - notebook que contiene el trabajo de ETL de los datos.<br>
+🔹 **querys.ipynb** - notebook que contienen el proceso de desarrollo de las queries.<br>
+🔹 **rating_data.parquet** - dataset que contiene registros de rating de peliculas por usuario.<br>
+🔹 **movie_data.csv** - dataset con tiene peliculas por plataforma como netfli, disney, entre otros.<br>
 
-🟣 Las funciones que componen la API son: 🟣
+## API
 
-🔹 get_max_duration: Consulta de pelicula con mayor duration, expresado en min o season.
-🔹 get_score_count: Conteo de peliculas por plataforma con un puntaje mayor a X valor en determinado año.
-🔹 get_count_platform: Conteo de películas por plataforma.
-🔹 get_actor: Presentar el actor que mas se repite segun plataforma y año.
+🟣 **Enlaces de acceso** 🟣
 
-🟣 Cómo escribir cada función en el navegador: 🟣
+🔹 API: https://deta.space/discovery/r/cffsroh2qj7qft8c<br>
 
-◽ https://twj1kq.deta.dev/get_word_count/{plataforma}/{keyword}
-◽ https://twj1kq.deta.dev/get_score_count/{plataforma}/{puntaje}/{ano}
-◽ https://twj1kq.deta.dev/get_second_score/{plataforma}
-◽ https://twj1kq.deta.dev/get_longest/{plataforma}/{duration_type}/{ano}
-◽ https://twj1kq.deta.dev/get_rating_count/{rating}
+🟣 **Las funciones que componen la API son:** 🟣
 
-🟣 Queries de ejemplo para probar la api 🟣
+🔹 **get_max_duration**: Consulta de pelicula con mayor duration, expresado en min o season.<br>
+🔹 **get_score_count**: Conteo de peliculas por plataforma con un puntaje mayor a X valor en determinado año.<br>
+🔹 **get_count_platform**: Conteo de películas por plataforma.<br>
+🔹 **get_actor**: Presentar el actor que mas se repite segun plataforma y año.<br>
 
-◽ https://twj1kq.deta.dev/get_word_count/netflix/love
-◽ https://twj1kq.deta.dev/get_score_count/netflix/85/2010
-◽ https://twj1kq.deta.dev/get_second_score/amazon
-◽ https://twj1kq.deta.dev/get_longest/netflix/min/2016
-◽ https://twj1kq.deta.dev/get_rating_count/18+
 
-⚠️ Sintaxis a tener en cuenta al escribir una consulta: ⚠️
-🔹 Todo debe estar escrito en minúsculas.
-🔹 Las plataformas que admite son: Amazon, Disney, Hulu y Netflix.
-🔹 Evite utilizar caracteres hispanos.
-🔹 En caso de la query no arroje resultados, un mensaje explicativo se imprimirá en pantalla.
-🔹 En caso de que se ingrese una plataforma inválida, un mensaje explicativo se imprimirá en pantalla.
+## Modelo de Machine Learning
 
-🟣 Funciones extra 🟣
-🔹 Función Presentación: /
-Simplemente invocando el link vacío, muestra el nombre y a quien pertenece la api.
-🔹 Función menú: /menu
-Muestra una lista de las funciones disponibles para consultar.
-🔹 Función Contacto: /contacto
-Muestra dos maneras de contactar conmigo, en caso de necesidad.
-🔹 Función docs: /docs
-Muestra el menú principal de la api, donde también se puede testear las consultas.
+🟣 **Enlaces de acceso** 🟣
 
-🟣 Notas finales: 🟣
-😇 Muchas gracias por testear mi api!
-Todo el feedback es bien recibido. ☕
+🔹 APP Streamlit: https://gustgv-primer-proyecto-ml-reco-movies-4insnc.streamlit.app/<br>
+🔹 Repositorio de sistema en Streamlit: https://github.com/Gustgv/Primer-Proyecto-ML.git<br>
+
+🟣 **Las funciones del sistema de recomendaciones:** 🟣
+
+La funcion solo necesita de tres variables:
+* La id del usuario al cual quiere recomendar.
+* La id de la pelicula que desea recomendar.
+* El puntaje que estima que el usuario dara a la pelicula en caso de verla.
+
+Como resultado al ingresar estas variable el sistema le dira si la pelicula es recomendada o no y de serlo estimara la puntuacion que le dara.
