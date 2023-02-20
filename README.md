@@ -7,6 +7,7 @@ Video explicativo
 
 🟣**MENU:** 🟣
 
+🔹 **Fastapideta** - Carpeta con con paquetes requeridos para deployment de la API en depa.<br>
 🔹 **Raw** - las bases de datos que recibí para trabajar.<br>
 🔹 **ML_proyecto.ipynb** - notebook del proyecto de Machine Learning.<br>
 🔹 **transformacion.ipynb** - notebook que contiene el trabajo de ETL de los datos.<br>
@@ -34,6 +35,7 @@ Video explicativo
 
 🔹 APP Streamlit: https://gustgv-primer-proyecto-ml-reco-movies-4insnc.streamlit.app/<br>
 🔹 Repositorio de sistema en Streamlit: https://github.com/Gustgv/Primer-Proyecto-ML.git<br>
+🔹 Carpeta de Ratings el cual se tomo para entrenamiento del modelo: https://drive.google.com/drive/folders/1b49OVFJpjPPA1noRBBi1hSmMThXmNzxn<br>
 
 🟣 **Las funciones del sistema de recomendaciones:** 🟣
 
