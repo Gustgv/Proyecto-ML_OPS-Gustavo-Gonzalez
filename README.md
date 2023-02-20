@@ -1,4 +1,4 @@
-# Proyecto Individual - MOL OPS
+# Proyecto Individual - ML OPS
 **_Licenciado: Gustavo Rafael Gonzalez_**
 
 <p align="justify"> Recientemente se me ha solicitado de una semana a otra realizar un proceso de transformacion de datos y desarrollar una API, adicional a eso, me han encargado elaborar un modelo de ML de recomendacion de peliculas, basandose en el usuario y la pelicula. En este README encontrarán toda la documentación, e instrucciones necesarias, para poder utilizar la API que se me solicitó desarrollar y su enlace de acceso en **DETA**, asi mismo brindare los enlaces correspondientes al sistema de recomendaciones desplegado en **STREAMLIT** y la notebook que corresponde al desarrollo del modelo. </p>
